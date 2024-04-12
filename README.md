@@ -17,7 +17,7 @@ O código-fonte está organizado da seguinte forma:
 - `enum informacoesCampeao`: Define um enum para representar as características de um campeão (nome, função e dificuldade).
 - `func cadastroCampeao()`: Função para cadastrar um novo campeão e retornar as informações inseridas.
 - `func atualizarCampeao()`: Função para atualizar as informações de um campeão existente.
-- `func excluirCampeao()`: Função para excluir um campeão da lista.
+- `func deletarCampeao()`: Função para excluir um campeão da lista.
 
 
 ## Como Executar:
