@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FC1E2DFD2BC9A2EE00F3C3D7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E2DFC2BC9A2EE00F3C3D7 /* main.swift */; };
+		FC1E2E042BC9A4F300F3C3D7 /* cadastroCampeao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E2E032BC9A4F300F3C3D7 /* cadastroCampeao.swift */; };
+		FC1E2E062BC9A68A00F3C3D7 /* atualizarCampeao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E2E052BC9A68A00F3C3D7 /* atualizarCampeao.swift */; };
+		FC1E2E082BC9A69C00F3C3D7 /* deletarCampeao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E2E072BC9A69C00F3C3D7 /* deletarCampeao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		FC1E2DF92BC9A2EE00F3C3D7 /* Exercicio_ENUM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Exercicio_ENUM; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1E2DFC2BC9A2EE00F3C3D7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FC1E2E032BC9A4F300F3C3D7 /* cadastroCampeao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cadastroCampeao.swift; sourceTree = "<group>"; };
+		FC1E2E052BC9A68A00F3C3D7 /* atualizarCampeao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atualizarCampeao.swift; sourceTree = "<group>"; };
+		FC1E2E072BC9A69C00F3C3D7 /* deletarCampeao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deletarCampeao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				FC1E2DFC2BC9A2EE00F3C3D7 /* main.swift */,
+				FC1E2E032BC9A4F300F3C3D7 /* cadastroCampeao.swift */,
+				FC1E2E052BC9A68A00F3C3D7 /* atualizarCampeao.swift */,
+				FC1E2E072BC9A69C00F3C3D7 /* deletarCampeao.swift */,
 			);
 			path = Exercicio_ENUM;
 			sourceTree = "<group>";
@@ -121,6 +130,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC1E2DFD2BC9A2EE00F3C3D7 /* main.swift in Sources */,
+				FC1E2E042BC9A4F300F3C3D7 /* cadastroCampeao.swift in Sources */,
+				FC1E2E082BC9A69C00F3C3D7 /* deletarCampeao.swift in Sources */,
+				FC1E2E062BC9A68A00F3C3D7 /* atualizarCampeao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

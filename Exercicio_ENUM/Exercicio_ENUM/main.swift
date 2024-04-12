@@ -14,43 +14,19 @@ enum informacoesCampeao {
     case dificuldade(String)
 }
 
-func cadastroCampeao() -> (String, String, String) {
-    print("Cadastro de Novo Campeão:")
-    
-    //variaveis que armazenam as informaçoes do campeão
-    var nome = ""
-    var role = ""
-    var dificuldade = ""
-    
-    //solicita e guarda o nome
-    print("Nome:")
-    if let nomeCampeao = readLine(){
-        nome = nomeCampeao
-    }
-    //solicita e guarda a role
-    print("Role:")
-    if let roleCampeao = readLine(){
-        role = roleCampeao
-    }
-    //solicita e guarda a dificuldade
-    print("Dificuldade:")
-    if let dificuldadeCampeao = readLine(){
-        dificuldade = dificuldadeCampeao
-    }
-    
-    return (nome, role, dificuldade)
-}
-
-func cadastro(){
+func main(){
+    // inicializa um array vazio para armazenar os campeões
     var campeoes: [(String, String, String)] = []
     
     //Menu
     while true {
         print("\n--- Menu ---")
-        print("1. Cadastrar novo campeão")
-        print("2. Visualizar campeões cadastrados")
-        print("3. Sair")
-        print("Escolha uma opção:")
+                print("1. Cadastrar novo campeão")
+                print("2. Visualizar campeões cadastrados")
+                print("3. Atualizar campeão")
+                print("4. Excluir campeão")
+                print("5. Sair")
+                print("Escolha uma opção:")
         
         
         if let escolha = readLine(), let opcao = Int(escolha){
@@ -68,13 +44,21 @@ func cadastro(){
                     print("Esses sao os campeões cadastrados")
                     for (index, campeao) in campeoes.enumerated(){
                         print("\nCampeão \(index + 1):")
-                               print("Nome: \(campeao.0)")
-                               print("Função: \(campeao.1)")
-                               print("Dificuldade: \(campeao.2)")
+                        print("Nome: \(campeao.0)")
+                        print("Função: \(campeao.1)")
+                        print("Dificuldade: \(campeao.2)")
                     }
                 }
             case 3:
-                //3. Sair do programa
+            // atualizar campeão
+            // a notação do símbolo "&" antes do nome do parâmetro campeoes indica que estamos passando a referência para a variável campeoes, e não apenas uma cópia do seu valor.
+    
+                atualizarCampeao(campeoes: &campeoes)
+            case 4:
+            // excluir campeão
+                deletarCampeao(campeoes: &campeoes)
+            case 5:
+                //5. Sair do programa
                 print("Fim do programa")
                 return
             default:
@@ -87,3 +71,4 @@ func cadastro(){
     }
 }
 
+main()
